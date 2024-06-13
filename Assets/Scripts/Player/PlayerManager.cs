@@ -55,6 +55,7 @@ public class PlayerManager : MonoSingletonGeneric<PlayerManager>
     {
         playerHealth = player.GetHealthValue();
         healthBar.maxValue = playerHealth;
+        healthBar.value = playerHealth;
     }
     void UpdateXPBar()
     {

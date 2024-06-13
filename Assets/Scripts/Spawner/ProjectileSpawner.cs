@@ -148,7 +148,7 @@ public class ProjectileSpawner : MonoSingletonGeneric<ProjectileSpawner>
     {
         if (spawningTimeDifference <= 0.2f)
             return;
-        spawningTimeDifference -= spawningTimeDifference;
+        spawningTimeDifference -= SpawnSpeedIncrementValue;
         Debug.Log("bullet time: " + spawningTimeDifference);
 
     }
